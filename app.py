@@ -6,6 +6,7 @@ app = Flask(__name__)
 def index():
     name=request.args.get("name","World")
     return render_template('index.html', placeholder=name)
+
 @app.route("/game", methods=["POST"])
 def play_game():
     name=request.form.get("user_name")

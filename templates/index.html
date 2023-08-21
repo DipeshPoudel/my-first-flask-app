@@ -6,7 +6,7 @@
     <title>My First Web Page</title>
 </head>
 <body>
-    <form action="/game", method="post">
+    <form action="{{url_for('play_game')}}", method="post">
         <input type="text" placeholder="Enter Your Name" name="user_name">
         <select name="game">
             <option value="Rock">Rock</option>
